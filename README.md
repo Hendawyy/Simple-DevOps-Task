@@ -76,7 +76,7 @@ exit
 
 5. **Test Website:**
    - Ensure website displays expected message.
-![simplewebsiteres.png](./Screenshots/Task#1/simplewebsiteres.png)
+![simplewebsiteres.png](./Screenshots/Task\#1/simplewebsiteres.png)
 
 ### Git and GitHub
 
@@ -167,8 +167,8 @@ docker-compose up -d
 curl localhost:8081
 ```
  
-![TestingServiceonremoteinstance.png](./Screenshots/Task#4/TestingServiceonremoteinstance.png)
-![Testing Service on remote instance 2.png](./Screenshots/Task#4/TestingServiceonremoteinstance2.png)
+![TestingServiceonremoteinstance.png](./Screenshots/Task\#4/TestingServiceonremoteinstance.png)
+![Testing Service on remote instance 2.png](./Screenshots/Task\#4/TestingServiceonremoteinstance2.png)
 
 ## Usage
 
