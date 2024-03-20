@@ -121,7 +121,6 @@ docker-compose up -d
   - ::1 is the true "local host" or "loopback" address, equivalent to 127.0. 0.1.
   - ![phpcoderes.png](./Screenshots/Task#1/phpcoderes.png)
   - ![phpcoderes2.png](./Screenshots/Task#1/phpcoderes2.png)
-
 - **Connecting to Cloud Instance:**
   - From what I understand in this task I will have to Deploy the web app on a remote Cloud instance.
 
