@@ -76,7 +76,6 @@ exit
 
 5. **Test Website:**
    - Ensure website displays expected message.
-![simplewebsiteres.png](./Screenshots/Task\#1/simplewebsiteres.png)
 
 ### Git and GitHub
 
@@ -119,8 +118,6 @@ docker-compose up -d
   - In Task #1, the IP address used would be the localhost (127.0.0.1).
   - Routing protocols such as TCP/IP would be used for communication between the server and the client.
   - ::1 is the true "local host" or "loopback" address, equivalent to 127.0. 0.1.
-  - ![phpcoderes.png](./Screenshots/Task\#1/phpcoderes.png)
-  - ![phpcoderes2.png](./Screenshots/Task\#1/phpcoderes2.png)
 - **Connecting to Cloud Instance:**
   - From what I understand in this task I will have to Deploy the web app on a remote Cloud instance.
 
@@ -166,9 +163,6 @@ docker-compose up -d
 ```bash
 curl localhost:8081
 ```
- 
-![TestingServiceonremoteinstance.png]("./Screenshots/Task#4/TestingServiceonremoteinstance.png")
-![Testing Service on remote instance 2.png]("./Screenshots/Task\#4/TestingServiceonremoteinstance2.png")
 
 ## Usage
 
