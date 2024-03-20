@@ -133,6 +133,7 @@ To deploy CloudDockerize on AWS EC2:
 2. SSH into the instance.
 
 ```bash
+ssh -i "key-name" "user"@"instance-public-ip"
 ssh -i "ATW.pem" ubuntu@54.174.143.162
 ```
 
@@ -140,6 +141,8 @@ ssh -i "ATW.pem" ubuntu@54.174.143.162
 4. Transfer Docker Compose files and other needed files to the remote instance.
 
 ```bash
+scp -i "key-name" file2 file2 filen "user"@"instance-public-ip":"desired-dir-on-remote-instance"
+
 scp -i "ATW.pem" docker-compose.yml Dockerfile Dockerfile.mysql mysql_root_password.txt mysql_user_password.txt index.php installub.sh  ubuntu@54.174.143.162:~
 ```
 
@@ -165,7 +168,7 @@ docker-compose up -d
 curl localhost:8081
 ```
  
-![Testing Service on remote instance.png](./Screenshots/Task#4/Testing%20Service%20on%20remote%20instance.png)
+![TestingServiceonremoteinstance.png](./Screenshots/Task#4/Testing%20Service%20on%20remote%20instance.png)
 ![Testing Service on remote instance 2.png](./Screenshots/Task#4/Testing%20Service%20on%20remote%20instance%202.png)
 
 ## Usage
