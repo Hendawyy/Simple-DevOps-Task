@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+    networks:
+      - my_network
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_root_password
+      MYSQL_DATABASE: "trial"
+      MYSQL_USER: "seif"
+      MYSQL_PASSWORD_FILE: /run/secrets/mysql_user_password
+    networks:
+      - my_network
+    secrets:
+      - mysql_root_password
+      - mysql_user_password
+
+secrets:
+  mysql_root_password:
+    file: ./mysql_root_password.txt
+  mysql_user_password:
+    file: ./mysql_user_password.txt
+
+networks:
+  my_network:
+    driver: bridge

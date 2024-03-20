@@ -1,0 +1,8 @@
+# Use the official MySQL image
+FROM mysql
+
+# Expose port 3306 to the outside world
+EXPOSE 3306
+
+# Command to run MySQL server
+CMD ["mysqld"]

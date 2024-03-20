@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "seif";
 $password = "123";
 $database = "trial";
